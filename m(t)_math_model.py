@@ -12,10 +12,8 @@ def m(t):
         return 3780 - 2000 / 352 * (t - 129)
     elif 155 < t <= 158:
         return 3632
-    elif 158 < t <= 484:
-        return 3780 - 2000 / 352 * (t - 158)
-    elif 484 < t <= 499:
-        return 990
+    elif 158 < t <= 499:
+        return 3780 - 2000 / 352 * (t  - 158 + 26)
 
 # Время в ksp
 with open('time_in_ksp.json', 'r') as f:
